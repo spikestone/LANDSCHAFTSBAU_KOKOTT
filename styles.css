@@ -334,6 +334,18 @@ a {
     text-align: center;
   }
 
+  .site-header.scrolled .topbar {
+    display: none;
+  }
+
+  .site-header.scrolled .branding {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .site-header.scrolled .main-nav {
+    padding: 0.5rem 0.6rem;
+  }
+
   .hero-slider {
     min-height: 55vh;
   }
