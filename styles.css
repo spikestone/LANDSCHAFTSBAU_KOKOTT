@@ -323,16 +323,70 @@ a {
     gap: 0.75rem;
   }
 
-  .hero {
-    padding: 3.5rem 1rem;
-  }
-
   .main-nav {
     gap: 0.35rem;
+    justify-content: space-around;
   }
 
   .topbar {
     flex-direction: column;
     gap: 0.35rem;
+    text-align: center;
+  }
+
+  .hero-slider {
+    min-height: 55vh;
+  }
+
+  .hero-slider .slide-inner {
+    padding: 1.25rem;
+  }
+
+  .hero-slider .slide-inner h2 {
+    font-size: clamp(1.5rem, 8vw, 2.2rem);
+  }
+
+  .hero-slider .slide-inner p {
+    font-size: clamp(0.95rem, 3.5vw, 1.2rem);
+  }
+
+  .hero-slider .slider-controls {
+    bottom: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .cta,
+  .secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section {
+    margin: 1.4rem auto;
   }
 }
+
+@media (max-width: 480px) {
+  .hero-slider {
+    min-height: 48vh;
+  }
+
+  .site-header .branding h1 {
+    font-size: 1.4rem;
+  }
+
+  .site-header .branding p {
+    font-size: 0.95rem;
+  }
+
+  .main-nav a {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
